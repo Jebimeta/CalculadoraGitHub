@@ -59,6 +59,10 @@ public class Calculadora {
   public double divide(double n1, double n2) {
     return n1 / n2;
   }
+  
+  public double modulo(double n1, double n2){
+    return n1 % n2;
+  }
 
   // Métodos Getters y Setters
   // Métodos para poder acceder a los atributos declarados como privados
