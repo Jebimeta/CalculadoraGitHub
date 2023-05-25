@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+
 import java.util.Scanner;
 
 /**
@@ -17,9 +18,9 @@ public class Calculadora {
   public String marca;
   private String modelo;
   private String nserie;
-
+  
   private Scanner s;
-
+  
   // Un atributo estático solo es accesible desde un método estático
   private static int nObjetos;
 
@@ -34,13 +35,13 @@ public class Calculadora {
     this.nserie = nserie;
     nObjetos++;
   }
-
+  
   // Constructores vacíos
   // Sirven para sobrecargar los métodos de un objeto para que los parámetros que
   // haya que pasarle puedan ser distintos. Lo crearemos vacío y le pasaremos los
   // parámetros a través de los métodos setters
-  public Calculadora() {
-
+  public Calculadora(){
+    
   }
 
 // Métodos
@@ -52,24 +53,21 @@ public class Calculadora {
     return n1 - n2;
   }
 
-  public double multiplica(double n1, double n2) {
+    public double multiplica(double n1, double n2) {
     return n1 * n2;
-  }
-
-  public double divide(double n1, double n2) {
-    return n1 / n2;
   }
 
   // Métodos Getters y Setters
   // Métodos para poder acceder a los atributos declarados como privados
   // Con los getters puede obtenerse información, mientras que con los setters pueden
   // modificarse sus valores
-  public String getModelo() {
+  
+  public String getModelo(){
     return this.modelo;
   }
-
-  public void setModelo(String modelo) {
-    this.modelo = modelo;
+  
+  public void setModelo(String modelo){
+    this.modelo=modelo;
   }
 
   public static int getnObjetos() {
