@@ -53,6 +53,9 @@ public class Calculadora {
     return n1 - n2;
   }
 
+    public double multiplica(double n1, double n2) {
+    return n1 * n2;
+  }
 
   // Métodos Getters y Setters
   // Métodos para poder acceder a los atributos declarados como privados
